@@ -1,12 +1,12 @@
 const highlightTips = () => {
-    const tips = document.querySelectorAll(".tips");
+    const tips = document.querySelectorAll(".tip");
     for (const tip of tips) {
         tip.addEventListener("mouseover", event => {
             tip.className = "tipsHighlight";
         });
-        tip.addEventListener("mousout", event => {
+        tip.addEventListener("mouseout", event => {
             tip.className = "";
-        })
+        });
     }
 };
 
